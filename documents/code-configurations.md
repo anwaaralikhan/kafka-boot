@@ -30,6 +30,9 @@
 ```
     #bootstrap.servers=localhost:9092
     bootstrap.servers=<ip-address-of-the-machine>:9092
+    
+    #consumer group id
+    group.id=test-consumer-group
 ```
 - producer.properties
 ```
