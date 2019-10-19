@@ -1,7 +1,7 @@
 
 #### Application Configurations
 
-1- setup `<ip-address-of-the-machine>:9092` in `server.properties`
+- setup `<ip-address-of-the-machine>:9092` in `server.properties`
 ```
     Properties properties=new Properties();
     {
