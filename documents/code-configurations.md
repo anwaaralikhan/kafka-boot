@@ -1,11 +1,11 @@
 
 #### Application Configurations
 
-1- setup <ip-address:port> in `server.properties`
+1- setup `<ip-address-of-the-machine>:9092` in `server.properties`
 ```
     Properties properties=new Properties();
     {
-    	properties.put("bootstrap.servers", "<ip-address:port>");
+    	properties.put("bootstrap.servers", "<ip-address-of-the-machine>:9092");
     	properties.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
     	properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
     }
@@ -29,10 +29,10 @@
 - consumer.properties
 ```
     #bootstrap.servers=localhost:9092
-    bootstrap.servers=10.0.0.69:9092
+    bootstrap.servers=<ip-address-of-the-machine>:9092
 ```
 - producer.properties
 ```
     #bootstrap.servers=localhost:9092
-    bootstrap.servers=10.0.0.69:9092
+    bootstrap.servers=<ip-address-of-the-machine>:9092
 ```
